@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniWiki - O verão em que hikaru morreu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color:rgb(255, 95, 36);
+            color: #333;
+            
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            min-height: 110vh;
+        }
+        
+        header {
+             display: absolute;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px;
+            background-color: rgb(255, 95, 36);
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-header {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .anime-poster {
+            width: 110vh;
+            height: 164px;
+            background-color: #5e5656;
+            margin-right: 20px;
+            border-radius: 5px;
+             
+        }
+        #poster{
+            height: 160px;
+            width: 53vh;
+        }
+        
+        .anime-info {
+            flex: 1;
+        }
+        
+        .amazon-badge {
+            display: inline-block;
+            background-image: linear-gradient( -0.2turn, rgb(255, 145, 0) 50%, rgb(0, 0, 0) 50% ) ;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: absolute;
+            top: 270px;
+            left: 20px;
+             
+
+        }
+        
+        .anime-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+             position: absolute;
+            top: 300px;
+            left: 20px;
+        }
+        
+        .anime-synopsis {
+            margin-bottom: 15px;
+            line-height: 1.5;
+              position: absolute;
+            top: 350px;
+            left: 20px;
+            border-bottom: 1px solid #c3c3c3;
+            
+        }
+        
+        .anime-meta {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 545px;
+            left: 20px;
+            text-decoration: underline;
+        }
+        
+        .anime-genres {
+            font-size: 0.9rem;
+            color: #666;
+            position: absolute;
+            top: 565px;
+            left: 20px;
+            text-decoration: underline;
+            
+        }
+        
+        .details-section {
+            padding: 20px;
+            top: 565px;
+            left: 3px;
+            position: absolute;
+        }
+        
+        .details-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #ff6b6b;
+            margin-top: 10px;
+        }
+        
+        .detail-item {
+            margin-bottom: 10px;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+        }
+        .ani-logo {
+            position: absolute;
+
+        }
+
+        #ani {
+            width: 50px;
+            border-radius: 50%;
+        }
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            padding-left: 51vh;
+            top: 20px;
+              
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: blue;
+            padding-left: 15%;
+            
+        }
+        .return-badge {
+            position: absolute;
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="ani-logo">
+                <img id="ani" src="imgs/favicon.png" alt="">
+            </div>
+            <div class="logo">AniWiki</div>
+            <h1><div class="menu-icon">≡</div></h1>
+        </header>
+        
+        <div class="anime-header">
+            <div class="anime-poster">
+                <a class="return-badge" href="aniwiki2.0.html">↩</a>
+              <img id="poster" src="imgs/hikaru.webp" alt="">
+            </div>
+            
+            <div class="anime-info">
+                <a href="https://www.amazon.com.br/Ver%C3%A3o-que-Hikaru-Morreu-01/dp/6525914450/ref=sr_1_3?dib=eyJ2IjoiMSJ9.NLYuthR_jeAENQ50U6fGMwRDLBflo6KKryJ3xYwCwHmt9RFRpMij4xQ1hfhUdfwIrisI4UIGiF8kTFr-e-E8mwiVhdj8o144UwXwymiTUYHjnEABx6y2mG5x2y5Rnk_7jrdvx-cZJpAdGgjtnF0NcyIYJxaYEJTSRSp9IrgH9EPVq6_XkYyE3e-XRJg-c8E-HcNBoMmySiHM6XeKhbE_wUvltzQCHebCogAa1MF4h9tPBN3hj5Bn6fbvEB6mUiEuFGhtJ3lNY6Hhr_bgM_rZqjWkvdLXi7wZSikiyUn_jTw.xnbSmEosqYSlEtgj4xujF0jBhf_rMZA55QXVaBKv_rU&dib_tag=se&keywords=o+ver%C3%A3o+em+que+hikaru+morreu&qid=1747923899&sr=8-3" class="amazon-badge">amazon</a>
+                <h2 class="anime-title">O verão em que hikaru morreu</h2>
+                
+                <p class="anime-synopsis">
+                    O Verão em que Hikaru Morreu (também conhecido como "The Summer Hikaru Died") é um mangá japonês de terror e mistério, escrito e ilustrado por Mokumokuren. A série segue Yoshiki, um adolescente que se vê a meio de um mistério sobrenatural envolvendo seu amigo Hikaru, que parece ter sido possuído por uma entidade misteriosa. 
+                </p>
+                
+                <p class="anime-meta">6 vol</p>
+                
+                <p class="anime-genres">
+                    mangá - ação - aventura - comédia
+                </p>
+            </div>
+        </div>
+        
+        <div class="details-section">
+            <h3 class="details-title">Detalhes</h3>
+            
+            <div class="detail-item">
+                <span class="detail-label">Produtor:</span>
+                <span> Kadokawa Shoten. </span>
+            </div>
+            
+            <div class="detail-item">
+                <span class="detail-label">Autores:</span>
+                <span> Mokumokuren. </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

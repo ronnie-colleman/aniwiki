@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniWiki/ Catálogo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: rgb(255, 95, 36);
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(215, 215, 255);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(255, 95, 36);
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: blue;
+            padding-left: 15%;
+        }
+
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .catalog-section {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #444;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ff6b6b;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            margin: 25px 0 15px 0;
+            color: #555;
+        }
+
+        .anime-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .anime-card {
+            background-color: #acc5ff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.5s ease;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+            background-color: #5d8cfa;
+        }
+
+        .anime-poster {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            background-image: url("");
+        }
+
+        .anime-info {
+            padding: 15px;
+        }
+
+        .anime-title {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+
+        .anime-description {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #ff6b6b;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .anime-banner {
+            width: 100%;
+            height: 150px;
+        }
+
+        .ani-logo {
+            position: absolute;
+
+        }
+
+        #ani {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    
+            <header>
+                <div class="ani-logo">
+                    <img id="ani" src="imgs/favicon.png" alt="">
+                </div>
+
+                <div class="logo">AniWiki</div>
+                <div class="menu-icon">≡</div>
+            </header>
+
+            <div class="catalog-section">
+                <h2 class="section-title">catálogo:</h2>
+
+                <h3 class="category-title">Animes</h3>
+
+                <div class="anime-list">
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/onepiecebannerr.avif" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">One Piece</h3>
+                            <p class="anime-description">One Piece é uma série...</p>
+                            <a href="One Piece.html" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/dragonball.jfif" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">DragonBall Super</h3>
+                            <p class="anime-description">DragonBall Super é uma série...</p>
+                            <a href="DragonBall.html" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/blackclover.jfif" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">Black Clover</h3>
+                            <p class="anime-description">Black Clover é uma série...</p>
+                            <a href="BlackClover.html" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/yourname.jfif" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">Your Name</h3>
+                            <p class="anime-description">Your Name é um filme...</p>
+                            <a href="Your Name.html" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+
+
+                    <h3 class="section-title">mangás</h3>
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/hikaru.webp" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">O verão em que hikaru morreu</h3>
+                            <p class="anime-description">O verão em que hikaru...</p>
+                            <a href="hikaru.html" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/berserk.jpg" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">Berserk</h3>
+                            <p class="anime-description">Berserk é um mangá...</p>
+                            <a href="#" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/umineko.png" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">umineko</h3>
+                            <p class="anime-description">Umineko é um mangá...</p>
+                            <a href="#" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-poster">
+                            <img class="anime-banner" src="imgs/chainsawman.jpg" alt="">
+                        </div>
+                        <div class="anime-info">
+                            <h3 class="anime-title">Chainsawman</h3>
+                            <p class="anime-description">Chainsawman é um mangá...</p>
+                            <a href="#" class="read-more">ler mais...</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+         
+    </div>
+
+</body>
+
+</html>
